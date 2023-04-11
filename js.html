@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <style>
+        h1{
+            align-items: center;
+        }
+        #butt{
+            display: flex;
+            align-items: center;
+            gap: 70px;
+            margin-left: 30%;
+        }
+        button{
+            background-color: gray;
+            font-weight: 1000;
+            padding: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        p{
+            border: 1px solid black;
+            padding: 20px;
+        }
+        #reset{
+            margin-left: 43%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 align="center">Counter App</h1>
+        <div id="butt">
+        <button id="dec">decrement by 1</button>
+        <p id="value">0</p>
+        <button id="inc">increment by 1</button>
+    </div><br><br>
+        <button id="reset">reset value</button>
+    </div>
+        <script>
+            const decbtn=document.getElementById("dec");
+            const incbtn=document.getElementById("inc");
+            const resbtn=document.getElementById("reset");
+            var num=document.getElementById('value').innerText
+           decbtn.onclick=function dec(){
+               document.getElementById("value").innerText=document.getElementById("value").innerText-1;
+            };
+            incbtn.onclick=function inc()
+            {
+               document.getElementById("value").innerText=Number(document.getElementById("value").innerText)+1;
+            };
+            resbtn.onclick=function res(){
+                document.getElementById("value").innerText=0;
+            }
+        </script>
+</body>
+</html>
