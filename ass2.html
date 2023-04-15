@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            
+           width: 100vw;
+           height: 100vh;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+        }
+        li{
+            list-style: none;
+            cursor: pointer;
+        }
+        button{
+            background-color: rgb(124, 10, 153);
+            padding: 10px 17px;
+            border-radius: 5px;
+            color: antiquewhite;
+            
+        }
+        nav{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+        
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        .first{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        nav ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        section{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+        h1{
+            font-weight: 1000;
+            color: purple;
+            font-size: 70px;
+
+        }
+        h1 span{
+            color: blueviolet;
+        }
+        p{
+            color: gray;
+        }
+        .inside{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding: 0px 0px;
+            gap: 20px;
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding: 0px 0px;
+            gap: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="first"><img src="Logo.png" alt="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portifolio</a></li>
+                <li><a href="#">Prices</a></li>
+            </ul>
+        </div>
+        <div>
+            <button>Contact us</button>
+        </div>
+      </nav>
+    </header>
+    <section>
+         <div class="left">
+            <div class="inside"><h1>We Help You<br> <span>Crush </span>Your <br>Competition</h1>
+            <p>build trust to connect your brand to billions of users and grow your revenue <br>through SEO</p></div>
+            <button>See our services</button>
+         </div>
+         <div>
+            <img src="hell.png" alt="serve">
+         </div>
+    </section>
+    <footer>
+        
+    </footer>
+</body>
+</html>
