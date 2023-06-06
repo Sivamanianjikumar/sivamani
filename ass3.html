@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('bg.png');
+            background-size: cover;
+            color: white;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav{
+            background-color: black;
+        }
+        nav>ul{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            padding: 20px;
+        }
+        li{
+            padding-left: 40px;
+            font-size: 1.4em;
+        }
+        .container{
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 50%;
+            margin-left: 25%;
+            text-align: center;
+        }
+        
+        
+        button{
+            border: none;
+            padding: 15px 35px;
+            background-color:rgb(221, 22, 211);
+            font-size: 1.6em;
+            color: white;
+            border-radius: 10px;
+        }
+        
+        .desc{
+            font-size: 1.5em;
+        }
+        .main{
+            font-size: 5em;
+        }
+        
+        .rea{
+            margin-top: 50px;
+        }
+        
+        .token{
+            position: absolute;
+            right: 40px;
+            top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="./assets/white-logo.png" alt="" class="logo" height="40px" width="90px"></li>
+            <li>Apps</li>
+            <li>DAO</li>
+            <li>Technology</li>
+            <li>Token</li>
+            <li>Contributors</li>
+        </ul>
+    </nav>
+    <button class="token">Buy 1 Token</button>
+    <div class="container">
+        <p class="main">Let's Build a better tomorrow together</p>
+        <p class="desc">Buy one token,join the DAO.Change the world</p>
+        <button class="rea">Request Early Access</button>
+    </div>
+</body>
+</html>
